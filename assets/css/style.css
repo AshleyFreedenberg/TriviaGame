@@ -1,4 +1,50 @@
+
+body {
+    background-image: url("https://images.fineartamerica.com/images-medium-large-5/san-diego-skyline-and-coronado-at-dusk-usa-john-yato.jpg");
+
+}
+
+#score {
+    background-color: white;
+    margin-left: 39%;
+    margin-right: 39%;
+}
+
+h4 {
+    background-color: white;
+    margin-left: 13%;
+    margin-right: 13%;
+}
 p {
     margin-top: 15px;
     margin-bottom: 10px;
+    background-color: white;
+    margin-left: 13%;
+    margin-right: 13%;
 }
+
+form {
+    background-color: white;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+#header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-size: 40px;
+    padding: 20px;
+}
+#startGameContainer {
+    text-align: center;
+    font-size: 20px;
+}
+#questionsContainer {
+    text-align: center;
+    font-size: 20px;
+}
+#resultsContainer {
+    text-align: center;
+    font-size: 20px;
+}
+

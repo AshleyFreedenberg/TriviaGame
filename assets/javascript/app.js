@@ -10,16 +10,8 @@ $("#start").on("click", function () {
     $("#startGameContainer").hide();
     $("#questionsContainer").show();
     $("#resultsContainer").hide()
-});
 
-$("#done").on("click", function () {
-    $("#startGameContainer").hide();
-    $("#questionsContainer").hide();
-    $("#resultsContainer").show();
-});
-
-$(document).ready(function () {
-    var count = 122;
+    var count = 120;
     var counter = setInterval(timer, 1000);
 
     function timer() {
@@ -35,22 +27,27 @@ $(document).ready(function () {
     timer();
 });
 
-var correct = 0;
-var incorrect = 0;
-var unanswered = 0;
+$("#done").on("click", function () {
+    $("#startGameContainer").hide();
+    $("#questionsContainer").hide();
+    $("#resultsContainer").show();
 
-var valOne = "1";
-var valTwo = "1";
-var valThree = "0";
-var valFour = "1";
-var valFive = "1";
-var valSix = "0";
-var valSeven = "1";
-var valEight = "0";
-var valNine = "1";
-var valTen = "1";
+    correct = 0;
+    incorrect = 0;
+    unanswered = 0;
 
-//$(document).ready(function () {
+    valOne = "1";
+    valTwo = "1";
+    valThree = "0";
+    valFour = "1";
+    valFive = "1";
+    valSix = "0";
+    valSeven = "1";
+    valEight = "0";
+    valNine = "1";
+    valTen = "1";
+
+
     $("input[type='radio']").click(function () {
         var radioOneValue = $("input[name='one']:checked").val();
         console.log(radioOneValue);
@@ -58,7 +55,7 @@ var valTen = "1";
         correct = 0;
         incorrect = 0;
         if (radioOneValue === "0") {
-            incorrect++; 
+            incorrect++;
         }
         if (radioOneValue === "1") {
             correct++;
@@ -87,6 +84,7 @@ var valTen = "1";
 
 
 
+});
 
 
 
@@ -100,7 +98,11 @@ var valTen = "1";
 
 
 
-//});
+
+
+
+
+
 
 
 
