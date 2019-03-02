@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1>San Diego Trivia Game</h1>
+            </div>
+        </div>
+
+        <div id="startGameContainer">
+            <div class="row">
+                <div class="col-md-12">
+                    <button id="start">Start!</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="questionsContainer">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>You have <u id="timer"></u> seconds left!</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>1. The now SDCCU Stadium was named Qualcomm Stadium in the year 1997.</p>
+                    <form>
+                        <input type="radio" name="one" value= "1"> True <br>
+                        <input type="radio" name="one" value= "0"> False <br>
+                    </form>
+                    <p>2. The Coronado Bridge is two miles long.</p>
+                    <form>
+                        <input type="radio" name="two" value= "1"> True <br>
+                        <input type="radio" name="two" value= "0"> False <br>
+                    </form>
+                    <p>3. Mission Bay Park was dredged out in the 1930s to provide recreational opportunities.</p>
+                    <form>
+                        <input type="radio" name="three" value= "1"> True <br>
+                        <input type="radio" name="three" value= "0"> False <br>
+                    </form>
+                    <p>4. Legoland was opened in 1999.</p>
+                    <form>
+                        <input type="radio" name="four" value= "1"> True <br>
+                        <input type="radio" name="four" value= "0"> False <br>
+                    </form>
+                    <p>5. Lindbergh Field is the name of San Diego’s international airport.</p>
+                    <form>
+                        <input type="radio" name="five" value= "1"> True <br>
+                        <input type="radio" name="five" value= "0"> False <br>
+                    </form>
+                    <p>6. “America’s Finest City” was coined in 1971.</p>
+                    <form>
+                        <input type="radio" name="six" value= "1"> True <br>
+                        <input type="radio" name="six" value= "0"> False <br>
+                    </form>
+                    <p>7. The Cabrillo Lighthouse was built in 1880.</p>
+                    <form>
+                        <input type="radio" name="seven" value= "1"> True <br>
+                        <input type="radio" name="seven" value= "0"> False <br>
+                    </form>
+                    <p>8. The small town of Julian is famous for Cherry Pie.</p>
+                    <form>
+                        <input type="radio" name="eight" value= "1"> True <br>
+                        <input type="radio" name="eight" value= "0"> False <br>
+                    </form>
+                    <p>9. WD-40 was invented in San Diego.</p>
+                    <form>
+                        <input type="radio" name="nine" value= "1"> True <br>
+                        <input type="radio" name="nine" value= "0"> False <br>
+                    </form>
+                    <p>10. San Diego State University was funded in 1897.</p>
+                    <form>
+                        <input type="radio" name="ten" value= "1"> True <br>
+                        <input type="radio" name="ten" value= "0"> False <br>
+                    </form>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button id="done">Done!</button>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div id="resultsContainer">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>All Done!</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Correct Answers: <span id="correctAn"></span></p>
+                    <p>Incorrect Answers: <span id="incorrectAn"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
