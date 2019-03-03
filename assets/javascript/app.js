@@ -25,6 +25,8 @@ $("#start").on("click", function () {
         $("#timer").text(count);
     }
     timer();
+    
+    $("#resultsContainer").reset();
 });
 
 $("#done").on("click", function () {
