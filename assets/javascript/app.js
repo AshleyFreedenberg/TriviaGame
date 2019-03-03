@@ -34,62 +34,154 @@ $("#done").on("click", function () {
 
 });
 
-valOne = "1";
-valTwo = "1";
-valThree = "0";
-valFour = "1";
-valFive = "1";
-valSix = "0";
-valSeven = "1";
-valEight = "0";
-valNine = "1";
-valTen = "1";
+var valOne = "true";
+var valTwo = "true";
+var valThree = "false";
+var valFour = "true";
+var valFive = "true";
+var valSix = "false";
+var valSeven = "true";
+var valEight = "false";
+var valNine = "true";
+var valTen = "true";
 
 
 correct = 0;
 incorrect = 0;
 
 
-$("input[type='radio']").click(function () {
-    var radioOneValue = $("input[name='one']:checked").val();
+
+$("input:radio[name='group1']").click(function () {
+    var radioOneValue = $("input:radio[name='group1']:checked").attr("data-value");
     console.log(radioOneValue);
-    valOne = "1";
-    correct = 0;
-    incorrect = 0;
-    if (radioOneValue === "0") {
-        incorrect++;
-    }
-    if (radioOneValue === "1") {
+    if (radioOneValue === "true") {
         correct++;
     }
-
+    else {
+        incorrect++;
+    }
     $("#correctAn").text(correct);
     $("#incorrectAn").text(incorrect);
 });
 
-$("input[type='radio']").click(function () {
-    var radioTwoValue = $("input[name='two']:checked").val();
+
+
+$("input:radio[name='group2']").click(function () {
+    var radioTwoValue = $("input:radio[name='group2']:checked").attr("data-value");
     console.log(radioTwoValue);
-    valTwo = "1";
-    correct = 0;
-    incorrect = 0;
-    if (radioTwoValue === "0") {
-        incorrect++;
-    }
-    if (radioTwoValue === "1") {
+    if (radioTwoValue === "true") {
         correct++;
     }
-
+    else {
+        incorrect++;
+    }
     $("#correctAn").text(correct);
     $("#incorrectAn").text(incorrect);
 });
 
+$("input:radio[name='group3']").click(function () {
+    var radioThreeValue = $("input:radio[name='group3']:checked").attr("data-value");
+    console.log(radioThreeValue);
+    if (radioThreeValue === "false") {
+        correct++;
+    }
+    else {
+        incorrect++;
+    }
+    $("#correctAn").text(correct);
+    $("#incorrectAn").text(incorrect);
+});
 
+$("input:radio[name='group4']").click(function () {
+    var radioFourValue = $("input:radio[name='group4']:checked").attr("data-value");
+    console.log(radioFourValue);
+    if (radioFourValue === "true") {
+        correct++;
+    }
+    else {
+        incorrect++;
+    }
+    $("#correctAn").text(correct);
+    $("#incorrectAn").text(incorrect);
+});
 
+$("input:radio[name='group5']").click(function () {
+    var radioFiveValue = $("input:radio[name='group5']:checked").attr("data-value");
+    console.log(radioFiveValue);
+    if (radioFiveValue === "true") {
+        correct++;
+    }
+    else {
+        incorrect++;
+    }
+    $("#correctAn").text(correct);
+    $("#incorrectAn").text(incorrect);
+});
 
+$("input:radio[name='group6']").click(function () {
+    var radioSixValue = $("input:radio[name='group6']:checked").attr("data-value");
+    console.log(radioSixValue);
+    if (radioSixValue === "false") {
+        correct++;
+    }
+    else {
+        incorrect++;
+    }
+    $("#correctAn").text(correct);
+    $("#incorrectAn").text(incorrect);
+});
 
+$("input:radio[name='group7']").click(function () {
+    var radioSevenValue = $("input:radio[name='group7']:checked").attr("data-value");
+    console.log(radioSevenValue);
+    if (radioSevenValue === "true") {
+        correct++;
+    }
+    else {
+        incorrect++;
+    }
+    $("#correctAn").text(correct);
+    $("#incorrectAn").text(incorrect);
+});
 
+$("input:radio[name='group8']").click(function () {
+    var radioEightValue = $("input:radio[name='group8']:checked").attr("data-value");
+    console.log(radioEightValue);
+    if (radioEightValue === "false") {
+        correct++;
+    }
+    else {
+        incorrect++;
+    }
+    $("#correctAn").text(correct);
+    $("#incorrectAn").text(incorrect);
+});
 
+$("input:radio[name='group9']").click(function () {
+    var radioNineValue = $("input:radio[name='group9']:checked").attr("data-value");
+    console.log(radioNineValue);
+    if (radioNineValue === "true") {
+        correct++;
+    }
+    else {
+        incorrect++;
+    }
+    $("#correctAn").text(correct);
+    $("#incorrectAn").text(incorrect);
+});
+
+$("input:radio[name='group10']").click(function () {
+    var radioTenValue = $("input:radio[name='group10']:checked").attr("data-value");
+    console.log(radioTenValue);
+    if (radioTenValue === "true") {
+        correct++;
+    }
+    else {
+        incorrect++;
+    }
+    $("#correctAn").text(correct);
+    $("#incorrectAn").text(incorrect);
+});
 
 
 
