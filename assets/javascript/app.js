@@ -11,7 +11,7 @@ $("#start").on("click", function () {
     $("#questionsContainer").show();
     $("#resultsContainer").hide()
 
-    var count = 120;
+    var count = 91;
     var counter = setInterval(timer, 1000);
 
     function timer() {
@@ -36,16 +36,16 @@ $("#done").on("click", function () {
     incorrect = 0;
     unanswered = 0;
 
-    valOne = "1";
-    valTwo = "1";
-    valThree = "0";
-    valFour = "1";
-    valFive = "1";
-    valSix = "0";
-    valSeven = "1";
-    valEight = "0";
-    valNine = "1";
-    valTen = "1";
+    //valOne = "1";
+    //valTwo = "1";
+    //valThree = "0";
+    //valFour = "1";
+    //valFive = "1";
+    //valSix = "0";
+    //valSeven = "1";
+    //valEight = "0";
+    //valNine = "1";
+    //valTen = "1";
 
 
     $("input[type='radio']").click(function () {
