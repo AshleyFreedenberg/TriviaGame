@@ -32,59 +32,61 @@ $("#done").on("click", function () {
     $("#questionsContainer").hide();
     $("#resultsContainer").show();
 
+});
+
+valOne = "1";
+valTwo = "1";
+valThree = "0";
+valFour = "1";
+valFive = "1";
+valSix = "0";
+valSeven = "1";
+valEight = "0";
+valNine = "1";
+valTen = "1";
+
+
+correct = 0;
+incorrect = 0;
+
+
+$("input[type='radio']").click(function () {
+    var radioOneValue = $("input[name='one']:checked").val();
+    console.log(radioOneValue);
+    valOne = "1";
     correct = 0;
     incorrect = 0;
-    unanswered = 0;
+    if (radioOneValue === "0") {
+        incorrect++;
+    }
+    if (radioOneValue === "1") {
+        correct++;
+    }
 
-    //valOne = "1";
-    //valTwo = "1";
-    //valThree = "0";
-    //valFour = "1";
-    //valFive = "1";
-    //valSix = "0";
-    //valSeven = "1";
-    //valEight = "0";
-    //valNine = "1";
-    //valTen = "1";
-
-
-    $("input[type='radio']").click(function () {
-        var radioOneValue = $("input[name='one']:checked").val();
-        console.log(radioOneValue);
-        valOne = "1";
-        correct = 0;
-        incorrect = 0;
-        if (radioOneValue === "0") {
-            incorrect++;
-        }
-        if (radioOneValue === "1") {
-            correct++;
-        }
-
-        $("#correctAn").text(correct);
-        $("#incorrectAn").text(incorrect);
-    });
-
-    $("input[type='radio']").click(function () {
-        var radioTwoValue = $("input[name='two']:checked").val();
-        console.log(radioTwoValue);
-        valTwo = "1";
-        correct = 0;
-        incorrect = 0;
-        if (radioTwoValue === "0") {
-            incorrect++;
-        }
-        if (radioTwoValue === "1") {
-            correct++;
-        }
-
-        $("#correctAn").text(correct);
-        $("#incorrectAn").text(incorrect);
-    });
-
-
-
+    $("#correctAn").text(correct);
+    $("#incorrectAn").text(incorrect);
 });
+
+$("input[type='radio']").click(function () {
+    var radioTwoValue = $("input[name='two']:checked").val();
+    console.log(radioTwoValue);
+    valTwo = "1";
+    correct = 0;
+    incorrect = 0;
+    if (radioTwoValue === "0") {
+        incorrect++;
+    }
+    if (radioTwoValue === "1") {
+        correct++;
+    }
+
+    $("#correctAn").text(correct);
+    $("#incorrectAn").text(incorrect);
+});
+
+
+
+
 
 
 
